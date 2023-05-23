@@ -1,0 +1,259 @@
+.stack_body {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.stack_title {
+  width: 90%;
+  margin-left: 50px;
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: none;
+  align-items: center;
+}
+.stack_title > span {
+  font-size: 40px;
+  font-family: Arial, "Arial Black";
+  color: rgb(206, 207, 209);
+}
+.stack_title > h2 {
+  font-size: 40px;
+  font-family: "Arial Black";
+  color: rgb(8, 174, 240);
+  font-weight: normal;
+  margin: 0;
+  margin-left: 9px;
+}
+
+@media screen and (max-width: 720px) {
+  .stack_title {
+    width: 90%;
+    margin-left: 15px;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    background-color: none;
+  } 
+  .stack_title > span {
+    font-size: 40px;
+    font-family: Arial, "Arial Black";
+    color: rgb(206, 207, 209);
+  }
+  .stack_title > h2 {
+    font-size: 38px;
+    font-family: "Arial Black";
+    color: rgb(8, 174, 240);
+    font-weight: normal;
+    margin: 0;
+    margin-left: 9px;
+  }
+}
+.stack_items {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.stack_item {
+  width: 95%;
+  height: 100px;
+  border-radius: 20px;
+  background: #fff;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  align-items: center;
+  transition: 1.6s ease-in-out;
+}
+
+.s_id {
+  margin-left: 20px;
+  font-family: Arial;
+  font-size: 15px;
+  position: relative;
+  left: 30%;
+  opacity: 0;
+  transition: 1.6s ease-in-out;
+  font-size: 9px;
+}
+.s_title {
+  width: 40%;
+  text-align: left;
+  text-transform: capitalize;
+  position: relative;
+  font-family: Arial;
+  font-size: 15px;
+  transition: 1.6s ease-in-out;
+  left: 20%;
+  opacity: 0;
+  font-size: 9px;
+}
+.s_button {
+  margin-right: 20px;
+  font-family: Arial;
+  font-size: 15px;
+  position: relative;
+  left: -30%;
+  opacity: 0;
+  transition: 1.6s ease-in-out;
+}
+
+@media screen and (max-width: 720px) {
+  .s_id {
+    margin-left: 20px;
+    font-family: Arial;
+    font-size: 14px;
+    position: relative;
+    left: 30%;
+    opacity: 0;
+    transition: 1.6s ease-in-out;
+    font-size: 9px;
+  }
+  .s_title {
+    width: 50%;
+    text-align: left;
+    text-transform: capitalize;
+    position: relative;
+    font-family: Arial;
+    font-size: 14px;
+    transition: 1.6s ease-in-out;
+    left: 20%;
+    opacity: 0;
+    font-size: 9px;
+  }
+  .s_button {
+    margin-right: 20px;
+    font-family: Arial;
+    font-size: 14px;
+    position: relative;
+    left: -30%;
+    opacity: 0;
+    transition: 1.6s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .s_id {
+    margin-left: 20px;
+    font-family: Arial;
+    font-size: 13px;
+    position: relative;
+    left: 30%;
+    opacity: 0;
+    transition: 1.6s ease-in-out;
+    font-size: 9px;
+  }
+
+  .s_title {
+    width: 50%;
+    text-align: left;
+    text-transform: capitalize;
+    position: relative;
+    font-family: Arial;
+    font-size: 11px;
+    transition: 1.6s ease-in-out;
+    left: 20%;
+    opacity: 0;
+    font-size: 9px;
+  }
+
+  
+
+  .s_button {
+    margin-right: 20px;
+    font-family: Arial;
+    font-size: 14px;
+    position: relative;
+    left: -30%;
+    opacity: 0;
+    transition: 1.6s ease-in-out;
+  }
+}
+
+.s_btn {
+  transform: rotate(-90deg);
+  color: rgb(83, 84, 87);
+}
+
+.h_pa {
+  background-color: rgb(220, 233, 245, 0.2);
+  transition: 1.6s ease-in-out;
+}
+.h_id {
+  left: 0%;
+  opacity: 1;
+  transition: 1.6s ease-in-out;
+  font-size: 15px;
+}
+.h_title {
+  left: 0%;
+  opacity: 1;
+  transition: 1.6s ease-in-out;
+  font-size: 15px;
+}
+.h_btn {
+  left: 0%;
+  opacity: 1;
+  transition: 1.6s ease-in-out;
+}
+
+
+
+@media screen and (max-width:420px){
+    .h_id {
+  left: 0%;
+  opacity: 1;
+  transition: 1.6s ease-in-out;
+  font-size: 13px;
+}
+.h_title {
+  left: 0%;
+  opacity: 1;
+  transition: 1.6s ease-in-out;
+  font-size: 13px;
+}
+.h_btn {
+  left: 0%;
+  opacity: 1;
+  transition: 1.6s ease-in-out;
+}
+
+}
+
+@media screen and (max-width:280px){
+    .h_id {
+  left: 0%;
+  opacity: 1; 
+  transition: 1.6s ease-in-out;
+  font-size: 10px;
+}
+.h_title {
+  left: 0%;
+  opacity: 1;
+  transition: 1.6s ease-in-out;
+  font-size: 10px;
+}
+.h_btn {
+  left: 0%;
+  opacity: 1;
+  transition: 1.6s ease-in-out;
+}
+
+}
+
+
+.pointer {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  background: none;
+  z-index: 100;
+  bottom: 10vh;
+  left: 90vw;
+}

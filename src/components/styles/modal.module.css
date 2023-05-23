@@ -1,0 +1,25 @@
+.modal{width:100%; height:100vh; position:fixed; background-color: rgb(1, 1, 14,0.3); z-index: 90;margin:0; display:flex; justify-content: right;}
+.modal_ele{height: 90%; width:700px; border-radius:20px;background:#fff;left:20px; transition: 1s ease;animation: modal 1s ease ;display:flex;  position:relative;overflow: hidden;flex-direction:column; justify-content: end;}
+.show_modal_ele{transform:translateY(0px); transition: 1s ease;}
+.hide_modal_ele{transform:translateY(-40px); transition: 1s ease;}
+
+@keyframes modal {from{transform:translateY(-40px); transition: 1s ease;}to{transform:translateY(0px); transition: 1s ease;}
+    
+}
+.modal_parent{width:100%; height:80%;display:flex;position:relative; bottom:0px}
+.modal_social{width: 40%; height:50%;display:flex;flex-direction: column; justify-content: space-between;align-items:center;}
+
+.modal_social>a{width:40px; height:40px; border-radius:50%; background:#fff; display:flex; align-items: center; justify-content: center; box-shadow: 1px 2px 3px 1px rgb(220, 218, 218);}
+
+.modal_pages{width:60%; height:100%; display:flex; flex-direction: column;}
+.page_link{width:100%; text-decoration: none; color:black; font-size: 40px; font-family: "Arial Black"; margin-bottom: 20px; text-transform: capitalize;} 
+.active_page{color:rgb(7, 169, 234)}
+
+
+@media screen and (max-width:720px) {
+ .modal_social>a{cursor:none  } 
+.page_link{cursor:none}
+ 
+}
+
+

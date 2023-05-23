@@ -1,0 +1,114 @@
+.writing_body{width:100%; height:auto; display:flex; flex-direction:column}
+.writing_title{width:90%; margin-left: 50px;display:flex ; margin-top: 30px; margin-bottom: 30px; align-items: center;}
+.writing_title>span{font-size: 40px; font-family: Arial,"Arial Black"; color: rgb(206, 207, 209);}
+.writing_title>h2{font-size: 40px; font-family: "Arial Black"; color: rgb(8, 174, 240); font-weight: normal; margin: 0; margin-left: 9px;}
+
+.writing_cont{width: 100%; height: auto; display:flex; align-items: center;position:relative; justify-content: center;}
+.writing_items{width:95%; height:auto; display:grid; margin-left:20px;grid-template-columns: repeat(3,1fr);  gap: 10px; position:relative;background-color: none;}
+
+.writing_item{width: 400px; height:450px; ; display:flex; flex-direction:column; border:0.1em solid rgb(189, 192, 195,0.4)}
+ 
+/* ---------------RESPONSIVE */
+@media screen and (max-width:1300px){
+.writing_item{width: 380px; height:450px; ; display:flex; flex-direction:column; border:0.1em solid rgb(189, 192, 195,0.4);margin-bottom: 20px;}  
+}
+
+@media screen and (max-width:1060px){
+.writing_item{width: 300px; height:450px; ; display:flex; flex-direction:column; border:0.1em solid rgb(189, 192, 195,0.4);margin-bottom: 20px;}  
+}
+
+@media screen and (max-width:920px){
+    .writing_title{width:90%; margin-left: 15px;display:flex ; margin-top: 30px; margin-bottom: 30px; align-items: center;}
+
+    .writing_items{width:95%; height:auto; display:grid; margin-left:20px;grid-template-columns: repeat(2,1fr);  gap: 10px; position:relative;background-color: none;}
+
+.writing_item{width: 390px; height:450px; ; display:flex; flex-direction:column; border:0.1em solid rgb(189, 192, 195,0.4);margin-bottom: 20px;}
+ .writing_title>span{font-size: 40px; font-family: Arial,"Arial Black"; color: rgb(206, 207, 209); }
+.writing_title>h2{font-size: 38px; font-family: "Arial Black"; color: rgb(8, 174, 240); font-weight: normal; margin: 0; margin-left: 9px;}   
+
+
+}
+
+
+@media screen and (max-width:820px){
+    .writing_title{width:90%; margin-left: 15px;display:flex ; margin-top: 30px; margin-bottom: 30px; align-items: center;}
+
+    .writing_items{width:95%; height:auto; display:grid; margin-left:20px;grid-template-columns: repeat(2,1fr);  gap: 10px; position:relative;background-color: none;}
+
+.writing_item{width: 340px; height:380px; ; display:flex; flex-direction:column; border:0.1em solid rgb(189, 192, 195,0.4);margin-bottom: 20px;}
+ .writing_title>span{font-size: 40px; font-family: Arial,"Arial Black"; color: rgb(206, 207, 209); }
+.writing_title>h2{font-size: 38px; font-family: "Arial Black"; color: rgb(8, 174, 240); font-weight: normal; margin: 0; margin-left: 9px;}   
+
+
+}
+
+@media screen and (max-width:720px){
+    .writing_title{width:90%; margin-left: 15px;display:flex ; margin-top: 30px; margin-bottom: 30px; align-items: center;}
+
+    .writing_items{width:95%; height:auto; display:grid; margin-left:20px;grid-template-columns: repeat(2,1fr);  gap: 10px; position:relative;background-color: none;}
+
+.writing_item{width: 320px; height:380px; ; display:flex; flex-direction:column; border:0.1em solid rgb(189, 192, 195,0.4);margin-bottom: 20px;}
+ .writing_title>span{font-size: 40px; font-family: Arial,"Arial Black"; color: rgb(206, 207, 209); }
+.writing_title>h2{font-size: 38px; font-family: "Arial Black"; color: rgb(8, 174, 240); font-weight: normal; margin: 0; margin-left: 9px;}   
+
+
+}
+
+
+
+
+@media screen and (max-width:540px){
+    .writing_title{width:90%; margin-left: 15px;display:flex ; margin-top: 30px; margin-bottom: 30px; align-items: center;}
+    .writing_items{width:100%; height:auto; display:flex; margin-left:0px;flex-direction: column; position:relative;background-color: none; align-items:center; gap:0}
+.writing_item{width: 380px; height:420px; ; display:flex; flex-direction:column; border:0.1em solid rgb(189, 192, 195,0.4);margin-bottom: 20px;}
+ .writing_title>span{font-size: 40px; font-family: Arial,"Arial Black"; color: rgb(206, 207, 209); }
+.writing_title>h2{font-size: 38px; font-family: "Arial Black"; color: rgb(8, 174, 240); font-weight: normal; margin: 0; margin-left: 9px;}   
+
+
+}
+
+@media screen and (max-width:420px){
+  .writing_item{width: 350px; height:390px; ; display:flex; flex-direction:column; border:0.1em solid rgb(189, 192, 195,0.4);margin-bottom: 20px;}  
+}
+
+@media screen and (max-width:360px){
+  .writing_item{width: 340px; height:390px; ; display:flex; flex-direction:column; border:0.1em solid rgb(189, 192, 195,0.4);margin-bottom: 20px;}  
+}
+
+
+@media screen and (max-width:320px){
+  .writing_item{width: 290px; height:310px; ; display:flex; flex-direction:column; border:0.1em solid rgb(189, 192, 195,0.4);margin-bottom: 20px;}  
+}
+
+@media screen and (max-width:280px){
+  .writing_item{width: 250px; height:290px; ; display:flex; flex-direction:column; border:0.1em solid rgb(189, 192, 195,0.4);margin-bottom: 20px;}  
+}
+
+
+.writing_img{background-color: #ddd; width:100%; height:75%; border-radius:1px}
+.writing_item>h3{width:90%; font-family:Arial; margin-bottom: 3px;margin-left:20px}
+.writing_item>p{width:90%; font-family:Arial; margin-top: 10px; font-size:13px; color:rgb(121, 130, 140); margin-top: 5px;margin-left:20px}
+
+@media screen and (max-width:720px){
+.writing_item>h3{width:90%; font-family:Arial; margin-bottom: 3px;margin-left:20px}
+.writing_item>p{width:90%; font-family:Arial; margin-top: 10px; font-size:13px; color:rgb(121, 130, 140); margin-top: 5px;margin-left:20px; }
+    
+} 
+
+.more_page{width:100%; height: auto; display:flex; align-items: center;justify-content: center;margin-top:30px; margin-bottom:30px}
+.more_btn{width:260px; height:70px; border: 0.1em solid rgb(7, 169, 234);
+background-color: #fff; border-radius: 9px;position: relative;overflow: hidden;}
+.swip_1{position:absolute; width:70px;height: 100%; background-color: rgba(83, 201, 247, 0.1); border-radius: 0px 9px 9px 0px;transition:0.4s ease-in-out}
+.icr_swip1{width:100%; transition:0.1s ease-in-out}
+
+.swip_2{position:absolute; width:70px;height: 100%; background-color: rgba(99, 195, 246, 0.2); border-radius: 0px 9px 9px 0px; transition:0.2s ease-in-out}
+.icr_swip2{width:100%; transition:0.5s ease-in-out}
+
+.swip_txt{position:absolute; width:100%;height: 100%; background-color: none; display:flex; justify-content: space-between;align-items: center;cursor: pointer;}
+.txt{font-size:15px; font-family: "Arial Black";text-transform: capitalize;}
+@media screen and (max-width:720px){
+  .swip_txt{cursor: none;}
+}
+
+ 
+
