@@ -6,7 +6,7 @@
 .writing_cont{width: 100%; height: auto; display:flex; align-items: center;position:relative; justify-content: center;}
 .writing_items{width:95%; height:auto; display:grid; margin-left:20px;grid-template-columns: repeat(3,1fr);  gap: 10px; position:relative;background-color: none;}
 
-.writing_item{width: 400px; height:450px; ; display:flex; flex-direction:column; border:0.1em solid rgb(189, 192, 195,0.4)}
+.writing_item{width: 400px; height:450px; ; display:flex; flex-direction:column; border:0.1em solid rgb(189, 192, 195,0.4);text-decoration:none; color:black}
  
 /* ---------------RESPONSIVE */
 @media screen and (max-width:1300px){
@@ -43,11 +43,11 @@
 }
 
 @media screen and (max-width:720px){
-    .writing_title{width:90%; margin-left: 15px;display:flex ; margin-top: 30px; margin-bottom: 30px; align-items: center;}
+    .writing_title{width:90%; margin-left: 15px;display:flex ; margin-top: 30px; margin-bottom: 30px; align-items: center; }
 
     .writing_items{width:95%; height:auto; display:grid; margin-left:20px;grid-template-columns: repeat(2,1fr);  gap: 10px; position:relative;background-color: none;}
 
-.writing_item{width: 320px; height:380px; ; display:flex; flex-direction:column; border:0.1em solid rgb(189, 192, 195,0.4);margin-bottom: 20px;}
+.writing_item{width: 320px; height:380px; ; display:flex; flex-direction:column; border:0.1em solid rgb(189, 192, 195,0.4);margin-bottom: 20px;cursor:none}
  .writing_title>span{font-size: 40px; font-family: Arial,"Arial Black"; color: rgb(206, 207, 209); }
 .writing_title>h2{font-size: 38px; font-family: "Arial Black"; color: rgb(8, 174, 240); font-weight: normal; margin: 0; margin-left: 9px;}   
 
@@ -85,7 +85,7 @@
 }
 
 
-.writing_img{background-color: #ddd; width:100%; height:75%; border-radius:1px}
+.writing_img{background-color: none; width:100%; height:75%; border-radius:1px}
 .writing_item>h3{width:90%; font-family:Arial; margin-bottom: 3px;margin-left:20px}
 .writing_item>p{width:90%; font-family:Arial; margin-top: 10px; font-size:13px; color:rgb(121, 130, 140); margin-top: 5px;margin-left:20px}
 

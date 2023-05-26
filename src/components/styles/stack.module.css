@@ -72,6 +72,12 @@
   transition: 1.6s ease-in-out;
 }
 
+.stack_drop{position:absolute; width:90%; height:0px; background-color: rgba(255, 255, 255, 0.711); border-radius: 10px;overflow:hidden;z-index: 90;top:70%;transition:0.5s ease-in-out}
+.drop_title{font-size: 14px; margin-left: 20px;}
+.n_dp{height: 0px;transition:0.5s ease-in-out}
+.s_dp{height:90px;;transition:0.5s ease-in-out}
+
+
 .s_id {
   margin-left: 20px;
   font-family: Arial;
@@ -256,4 +262,4 @@
   z-index: 100;
   bottom: 10vh;
   left: 90vw;
-}
+}

@@ -15,10 +15,10 @@ export const Intro =()=>{
 const txt = "Hi I am Precious Dappa"
     return txt
 }
-
+ 
 export const About =()=>{
 const txt =
-  "I am an adapt Data Scientist,proficient in Machine Learaning, Deep Learaning, and Software Engineering for Data Science, with a track record of products and solutions in the industry and community.";
+  "I am an adapt Backend developer, proficient in nodejs, express, fastapi, sql, python, JavaScript, bash, mongodb, postgresql, with a track record of products and solutions in the industry and community.";
     return txt
 }
 
@@ -37,7 +37,18 @@ export const aboutJson =()=>{
 }
 
 export const Mystacks =()=>{
-    const data =[{title:"data science", description:""},{title:"machine learning", description:""},{title:"software engineering", description:""},{title:"others", description:""}]
+    const data = [
+      {
+        title: "Software engineer",
+        description: "nodejs, express, fastapi, sql, python, JavaScript, bash",
+      },
+      { title: "Databases", description: "mongodb, postgresql" },
+      {
+        title: "Data science",
+        description: "sklearn, pandas, numpy, matplotlb",
+      },
+      { title: "others", description: "App deployment with docker and heroku" },
+    ];
 
     return data
 }
@@ -122,9 +133,12 @@ export const Myfeatured =()=>{
 export const Social =()=>{
     const social = [
       { title: "twitter", link: "https:twitter.com/" },
-      { title: "linkedin", link: "https:linkedin.com/" },
-      { title: "github", link: "https:github.com/" },
-      { title: "medium", link: "https:medium.com/" }
+      {
+        title: "linkedin",
+        link: "https://www.linkedin.com/in/precious-dappa-962920274/",
+      },
+      { title: "github", link: "https:github.com/Dappa88" },
+      { title: "medium", link: "https:medium.com/" },
     ];
 
     return social
@@ -138,6 +152,6 @@ export const Pages =()=>{
 
 
 export const myFooter=()=>{
-const data = {email:"useremail@gmail.com", social:Social() }
+const data = { email: "dappa.precious5@gmail.com", social: Social() };
 return data
 }

@@ -4,6 +4,8 @@ import Button from "./button"
 import Card from "./card"
   
 const Writing=({name,data})=>{
+console.log("project",data)
+  const project = data?.filter((data,index)=>index<3)
 
     return ( 
       <section className={writing_body}>
@@ -13,11 +15,11 @@ const Writing=({name,data})=>{
         </div>
         <article className={writing_cont}> 
           <article className={writing_items}>
-            {data?.map((data, index) => (
+            {project?.map((data, index) => (
               <Card data={data} />
             ))}
           </article>
-        </article>
+        </article> 
         <article className={more_page}>
           <Button
             icon={"grass"}

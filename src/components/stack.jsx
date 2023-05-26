@@ -1,7 +1,7 @@
 import React ,{useRef,useEffect}from "react"
-import {stack_body, stack_title,stack_items,stack_item,s_id,s_title,s_button,s_btn,pointer,h_id,h_title,h_btn,h_pa} from "./styles/stack.module.css"
+import {stack_body, stack_title,stack_items,stack_item,s_id,s_title,s_button,s_btn,pointer,h_id,h_title,h_btn,h_pa,stack_drop,drop_title,s_dp,n_dp} from "./styles/stack.module.css"
 import { ArrowBackIos } from "@mui/icons-material"
-
+import { IconButton } from "@mui/material"
 const Stack =({name,data})=>{
 
 const pointers = useRef(null)
@@ -97,9 +97,30 @@ useEffect(()=>{
 
 },[])
 
+const drop=(e)=>{
+const all = e.currentTarget.parentElement.parentElement.parentElement.children;
+const ele = e.currentTarget.parentElement.parentElement.children[3];
+const num = all.length
+for(let x =1; x< num ;x++){
+  const element = all[x].children[3]
+
+if( element == ele ){
+  element.classList.toggle(`${s_dp}`)
+}
+else {
+  element.classList.remove(`${s_dp}`)
+}
+
+  
+}
+
+// const ele = e.currentTarget.parentElement.parentElement.children[3];
+// // console.log(ele)
+// ele.classList.toggle(`${s_dp}`)
+}
     return (
       <section className={stack_body}>
-        <article className={stack_title}>
+        <article className={stack_title}> 
           <span>~/</span>
           <h2>{name}</h2>
         </article>
@@ -110,8 +131,9 @@ useEffect(()=>{
               <div className={s_id}>{index + 1}</div>
               <h4 className={s_title}>{stack.title}</h4>
               <div className={s_button}>
-                <ArrowBackIos style={{ fontSize: "15px" }} className={s_btn} />
-              </div>
+               <IconButton onClick={drop}> <ArrowBackIos style={{ fontSize: "15px" }} className={s_btn}  /></IconButton>
+              </div >
+              <div className={stack_drop}><p className={drop_title}>{stack.description}</p></div>
             </article>
           ))}
         </article>

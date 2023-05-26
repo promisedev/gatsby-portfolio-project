@@ -11,6 +11,7 @@ import {
 import FilterAltOutlinedIcon from "@mui/icons-material/FilterAltOutlined";
 import GrassOutlinedIcon from "@mui/icons-material/GrassOutlined";
 import WorkOutlineIcon from "@mui/icons-material/WorkOutline";
+import { Link } from "gatsby";
 const Button=({icon,title,link,type})=>{
 const addSwip = (e) => {
   e.currentTarget.children[0].classList.add(`${icr_swip1}`);
@@ -24,29 +25,55 @@ const removeSwip = (e) => {
       <div className={more_btn} onMouseOver={addSwip} onMouseOut={removeSwip}>
         <span className={swip_1}></span>
         <span className={swip_2}></span>
-        <span className={swip_txt}>
-          {(icon == "grass" && ( 
-            <GrassOutlinedIcon
-              style={{
-                color: "rgb(7, 169, 234)",
-                fonstSize: "30px",
-                marginLeft: "30px", 
-              }}
-            />
-          )) ||
-            (icon == "job" && (
-              <WorkOutlineIcon
+        {type == "link" ? (
+          <Link to={`/${link}`} className={swip_txt}>
+            {(icon == "grass" && (
+              <GrassOutlinedIcon
                 style={{
                   color: "rgb(7, 169, 234)",
                   fonstSize: "30px",
                   marginLeft: "30px",
                 }}
               />
-            ))}
-          <span style={{ marginRight: "50px" }} className={txt}>
-            {title}
-          </span>
-        </span>
+            )) ||
+              (icon == "job" && (
+                <WorkOutlineIcon
+                  style={{
+                    color: "rgb(7, 169, 234)",
+                    fonstSize: "30px",
+                    marginLeft: "30px",
+                  }}
+                />
+              ))}
+            <span style={{ marginRight: "50px" }} className={txt}>
+              {title}
+            </span>
+          </Link>
+        ) : (
+          <a className={swip_txt} href={link}>
+            {(icon == "grass" && (
+              <GrassOutlinedIcon
+                style={{
+                  color: "rgb(7, 169, 234)",
+                  fonstSize: "30px",
+                  marginLeft: "30px",
+                }}
+              />
+            )) ||
+              (icon == "job" && (
+                <WorkOutlineIcon
+                  style={{
+                    color: "rgb(7, 169, 234)",
+                    fonstSize: "30px",
+                    marginLeft: "30px",
+                  }}
+                />
+              ))}
+            <span style={{ marginRight: "50px" }} className={txt}>
+              {title}
+            </span>
+          </a>
+        )}
       </div>
     );
 }

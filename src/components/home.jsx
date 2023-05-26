@@ -13,6 +13,8 @@ import { Mystacks, Myfeatured,Social} from '../utils/metadata'
 //import Modal from "./modal"
 import {Link} from "gatsby"
 import Layout from './layout';
+import {useStaticQuery, graphql} from "gatsby"
+
 const Home = () => {
 const n1 = useRef(null) 
 const n2 = useRef(null)
@@ -24,6 +26,23 @@ const name_2 = n2.current
 name_1&&name_1.classList.add(`${show_n1}`)
 name_2&&name_2.classList.add(`${show_n2}`)
 },[])
+
+const data = useStaticQuery( graphql`
+  query {
+    allContentfulPreciousSchema(sort: {createdAt: ASC}) {
+      nodes {
+        projectTitle
+        slug
+        projectDescription
+        githubRepo
+        projectImage {
+          gatsbyImage(placeholder: BLURRED, quality: 100, width: 1000)
+        }
+      }
+    }
+  }
+`)
+const result = data.allContentfulPreciousSchema.nodes
 
   return (
     <Layout>
@@ -74,7 +93,7 @@ name_2&&name_2.classList.add(`${show_n2}`)
         {/* --------------------fourth component----------------------- */}
         {/* <Stacks name={"featured work"} data={Myfeatured()} /> */}
 
-        <Projects name={"Projects"} data={[1, 2, 3]} />
+        <Projects name={"Projects"} data={result} />
 
         {/* -------------------------------------------------- */}
       </main>

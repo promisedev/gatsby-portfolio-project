@@ -47,6 +47,12 @@
 
 .hero_name2{ margin:0; text-transform: uppercase; font-size: 65px; color:#fff;font-family:'Lilita One','Secular One','Fredoka One','Candal','Arial Black';font-weight:normal;position:relative;transform: translateX(40%);transition: 1.5s ease; opacity: 0.2;}
 
+@media screen and (max-width:420px){
+.hero_name1{ margin:0; text-transform: uppercase; font-size: 55px; color:#fff; font-family:'Lilita One','Secular One','Fredoka One','Candal','Arial Black';font-weight:normal; color:rgb(7, 169, 234);position:relative;transform: translateX(-40%);transition: 1.5s ease; opacity: 0.2; }
+
+.hero_name2{ margin:0; text-transform: uppercase; font-size: 55px; color:#fff;font-family:'Lilita One','Secular One','Fredoka One','Candal','Arial Black';font-weight:normal;position:relative;transform: translateX(40%);transition: 1.5s ease; opacity: 0.2;}
+}
+
 @media screen and (max-width:280px){
   .hero_name{ width:90%; height:160px; display:flex; flex-direction: column; margin-left:5px; justify-content:space-around; background-color: none;}
 

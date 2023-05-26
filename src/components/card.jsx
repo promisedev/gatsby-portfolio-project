@@ -4,14 +4,22 @@ import {
   writing_img,
    
 } from "./styles/projects.module.css";
-const Card = () => {
-  return (
-    <div className={writing_item}>
-<div className={writing_img}></div>
-<h3>Set up your macahine </h3>
-<p>Some dummy text about how to set up machine learning mode </p>
+import { GatsbyImage ,getImage} from 'gatsby-plugin-image';
 
-    </div> 
+
+
+const Card = ({data}) => {
+  const {projectTitle, slug, projectDescription, githubRepo, projectImage:{gatsbyImage}}=data;
+const image =getImage(gatsbyImage)
+  return (
+    <a className={writing_item} href={githubRepo}>
+<div className={writing_img}>
+<GatsbyImage image={image} alt="" style={{width:"100%",height:"100%"}}/>
+</div>
+<h3>{projectTitle}</h3>
+<p>{projectDescription}</p>
+
+    </a> 
   )
 }
 
